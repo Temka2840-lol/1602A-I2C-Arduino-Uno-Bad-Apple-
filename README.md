@@ -12,4 +12,3 @@ Playing Bad Apple on a 16x2 I2C LCD using an Arduino Uno and an SD card.
 7. Open and upload the Arduino sketch.
 8. If you see the animation — congratulations, you're all done!
 
-*(Note: The animation appears made of vertical lines "|" due to the hardware limitations of the HD44780 controller and its restriction of only 8 custom characters at a time).*
