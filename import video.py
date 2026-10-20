@@ -18,19 +18,21 @@ while cap.isOpened():
     if not ret:
         break
 
+    orig_h, orig_w = frame.shape[:2]
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    crop_margin_y = int(orig_h * 0.15) 
+    cropped_frame = frame[crop_margin_y:orig_h - crop_margin_y, :]
+
+    gray = cv2.cvtColor(cropped_frame, cv2.COLOR_BGR2GRAY)
+
     resized = cv2.resize(gray, (WIDTH, HEIGHT), interpolation=cv2.INTER_AREA)
 
-  
     _, binary = cv2.threshold(resized, 127, 255, cv2.THRESH_BINARY)
 
-    
     frame_bytes = bytearray()
 
     for row in range(2):
         for col in range(16):
-           
             char_block = binary[row*8:(row+1)*8, col*5:(col+1)*5]
             
             for line in range(8):
