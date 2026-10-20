@@ -1,7 +1,7 @@
 # 1602A-I2C-Arduino-Uno-Bad-Apple
 Playing Bad Apple on a 16x2 I2C LCD using an Arduino Uno and an SD card.
 
-![photo](./img/photo.jpg)
+![photo.](./img/photo.jpg)
 
 ## Instructions:
 
