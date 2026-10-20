@@ -3,6 +3,9 @@ Playing Bad Apple on a 16x2 I2C LCD using an Arduino Uno and an SD card.
 
 <img src="./img/photo.jpg" width="300">
 
+I2C Mode: ~20 FPS
+Parallel Mode: ~33 FPS
+
 ## Instructions:
 
 1. Install Python.
